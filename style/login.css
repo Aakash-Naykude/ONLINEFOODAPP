@@ -1,0 +1,21 @@
+#cont{
+    margin: auto;
+    height: 300px;
+    width: 40%;
+    margin-left: 30%;
+    color: red;
+    background-color: skyblue;
+}
+#cont>form>input{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 2%;
+    height: 20px;
+    text-align: center;
+}
+#cont>a{
+    text-align: center;
+}
+#cont>form{
+    margin-left: 5%;
+}

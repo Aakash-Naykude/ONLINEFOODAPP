@@ -1,0 +1,18 @@
+#nav>button{
+    margin-top: 10px;
+}
+.home{
+    width: 30px;
+    height: 30px;
+}
+#nav{
+    width: 90%;
+    margin-left: 5%;
+}
+#nav>input{
+    height: 30px;
+    margin-top: -100px;
+}
+#search{
+    margin-left: 40%;
+}

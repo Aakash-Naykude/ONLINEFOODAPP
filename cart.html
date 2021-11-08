@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div id="cont">
+
+    </div>
+</body>
+</html>
+<script>
+    let par = JSON.parse(localStorage.getItem('meal'))
+    console.log(par)
+    function showdata(par){
+        let cont = document.getElementById('cont')
+        cont.innerHTML = null;
+        cont.style.display = "grid"
+        cont.style.width = "90%"
+        cont.style.marginLeft = "5%"
+        cont.style.gridTemplateColumns = "auto auto auto auto"
+        cont.style.gap = "10px"
+        par.forEach((par)=>{
+            let div = document.createElement('div')
+            div.style.display = "grid"
+            div.style.gridTemplateColumns = "auto"
+            div.style.marginTop = "10px"
+            let img = document.createElement('img')
+            img.src = par.strMealThumb
+            img.style.width = "250px"
+            img.style.height = "300px"
+            let title = par.strMeal;
+            div.append(img, title)
+            cont.append(div)
+        })
+    }
+    showdata(par)
+</script>
