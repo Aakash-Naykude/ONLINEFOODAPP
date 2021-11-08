@@ -36,9 +36,19 @@
             img.style.width = "250px"
             img.style.height = "300px"
             let title = par.strMeal;
-            div.append(img, title)
+            let btn = document.createElement('button')
+            btn.innerText = "place Order"
+            btn.onclick = function(){
+                placeor()
+            }
+            btn.style.width = "150px"
+            btn.style.height = "20px"
+            div.append(img, title, btn)
             cont.append(div)
         })
     }
     showdata(par)
+    function placeor(){
+        alert('order placed')
+    }
 </script>
